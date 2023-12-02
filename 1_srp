@@ -1,0 +1,17 @@
+class UserData {
+  String username;
+  String email;
+
+  UserData(this.username, this.email);
+}
+
+class UserRepository {
+  void saveUserData(UserData userData) {
+    // Save user data to database
+  }
+
+  UserData getUserData(String username) {
+    // Retrieve user data from the database
+    return UserData(username, "user@example.com");
+  }
+}
